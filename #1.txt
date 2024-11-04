@@ -1,0 +1,34 @@
+Started by user aann
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/lib/jenkins/workspace/pipe
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (checkout)
+[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Haneef123214/Tom-Cat.git
+ > git init /var/lib/jenkins/workspace/pipe # timeout=10
+Fetching upstream changes from https://github.com/Haneef123214/Tom-Cat.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/Haneef123214/Tom-Cat.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Haneef123214/Tom-Cat.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 69f4fc13ba74a8dc80b4e112e83cf13396bdd91e (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 69f4fc13ba74a8dc80b4e112e83cf13396bdd91e # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b main 69f4fc13ba74a8dc80b4e112e83cf13396bdd91e # timeout=10
+Commit message: "Update index.jsp"
+First time build. Skipping changelog.
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
